@@ -5,68 +5,30 @@ body {
         radial-gradient(at 90% 90%, rgba(239, 68, 68, 0.18) 0px, transparent 40%),
         radial-gradient(at 50% 50%, rgba(99, 102, 241, 0.12) 0px, transparent 60%);
     background-attachment: fixed;
-    color: #000000;
+    color: #ffffff !important; /* सभी मुख्य टेक्स्ट को सफ़ेद करेगा */
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-header{
-    background:#111;
-    color:rgb(0, 0, 0);
-    text-align:center;
-    padding:40px;
+/* हेडिंग और पैराग्राफ को चमकीला बनाने के लिए */
+h1, h2, h3, p, span, div {
+    color: #ffffff !important;
 }
 
-header h1{
-    font-size:40px;
-    margin:0;
-}
-
-section{
-    max-width:1000px;
-    margin:30px auto;
-    background:rgb(0, 0, 0);
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.1);
-}
-
-h2{
-    color:#8B0000;
-}
-
-button{
-    background:#8B0000;
-    color:rgb(0, 0, 0);
-    border:none;
-    padding:12px 25px;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#b30000;
-}
-
-footer{
-background:#111;
-    color:rgb(0, 0, 0);
-    text-align:center;
-padding:20px;
-    margin-top:40px;
-}
+/* शायरी कार्ड का डिज़ाइन */
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     padding: 20px;
     margin: 20px auto;
     max-width: 600px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .poetry-container p {
-    color: #e2e8f0;
-    font-size: 1.1rem;
+    color: #f1f5f9 !important;
+    font-size: 1.15rem;
     line-height: 1.8;
+}
 }
