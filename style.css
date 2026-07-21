@@ -5,30 +5,42 @@ body {
         radial-gradient(at 90% 90%, rgba(239, 68, 68, 0.18) 0px, transparent 40%),
         radial-gradient(at 50% 50%, rgba(99, 102, 241, 0.12) 0px, transparent 60%);
     background-attachment: fixed;
-    color: #ffffff !important; /* सभी मुख्य टेक्स्ट को सफ़ेद करेगा */
+    color: #ffffff;
     margin: 0;
+    padding: 20px;
     font-family: Arial, sans-serif;
 }
 
-/* हेडिंग और पैराग्राफ को चमकीला बनाने के लिए */
-h1, h2, h3, p, span, div {
-    color: #ffffff !important;
+/* हेडर और टाइटल्स का स्टाइल */
+header, h1, h2, h3 {
+    text-align: center;
+    color: #ffffff;
 }
 
-/* शायरी कार्ड का डिज़ाइन */
-.card {
-    background: rgba(255, 255, 255, 0.08);
+/* शायरी के फ़्रेम (Card) की स्टाइलिंग */
+.card, .poetry-container {
+    background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 600px; /* एक निश्चित चौड़ाई फ़्रेम के लिए */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    text-align: center; /* टेक्स्ट को फ़्रेम के बीच में लाएगा */
 }
 
-.poetry-container p {
-    color: #f1f5f9 !important;
+/* फ़्रेम के अंदर की पंक्तियाँ (Poetry Lines) */
+.poetry-container p, .card p {
+    color: #f1f5f9;
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 2;
+    margin: 10px 0;
+    word-wrap: break-word; /* शब्दों को फ़्रेम से बाहर नहीं जाने देगा */
 }
+
+/* फुटर और संपर्क अनुभाग */
+footer, section {
+    text-align: center;
+    margin: 30px auto;
 }
