@@ -25,6 +25,13 @@ header, h1, h2, h3 {
     border-radius: 16px;
     padding: 30px;
     margin: 25px auto;
+    /* शेरों के बीच की डिवाइडर लाइन */
+.poetry-container hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    margin: 20px auto;
+    width: 90%;
+}
     max-width: 600px; /* एक निश्चित चौड़ाई फ़्रेम के लिए */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     text-align: center; /* टेक्स्ट को फ़्रेम के बीच में लाएगा */
