@@ -112,3 +112,29 @@ footer, section {
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4);
 }
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.insta-btn {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #ffffff;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 25px;
+  display: inline-block;
+  min-width: 220px;
+  box-shadow: 0 4px 10px rgba(220, 39, 67, 0.3);
+  transition: all 0.3s ease;
+}
+
+.insta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(220, 39, 67, 0.5);
+}
