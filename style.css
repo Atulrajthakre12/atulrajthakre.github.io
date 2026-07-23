@@ -18,16 +18,24 @@ header, h1, h3 {
 }
 
 /* शायरी के फ़्रेम (Card) की स्टाइलिंग */
-.card, .poetry-container {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
-    padding: 30px;
-    margin: 25px auto;
-    max-width: 600px; /* एक निश्चित चौड़ाई फ्रेम के लिए */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-    text-align: center; /* टेक्स्ट को फ्रेम के बीच में लाएगा */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 30px;
+  margin: 25px auto;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* अंदर वाले कंटेनर की एक्स्ट्रा लेयर्स हटा दीं */
+.poetry-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 /* शेरों के बीच की डिवाइडर लाइन */
