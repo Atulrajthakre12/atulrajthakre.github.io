@@ -22,8 +22,8 @@
 
 <!-- मेनू बार यहाँ आएगा -->
 <nav class="navbar">
-  <a href="#ghazal-section" class="nav-btn">📖 ग़ज़ल</a>
-  <a href="#shayari-section" class="nav-btn">✍️ शायरी</a>
+  <button class="nav-btn active" onclick="showCategory('ghazal')">📖 ग़ज़ल</button>
+  <button class="nav-btn" onclick="showCategory('shayari')">✍️ शायरी</button>
 </nav>
 
 <section class="hero">
@@ -39,8 +39,8 @@
             मुझे ग़ज़ल और शायरी लिखना एवं मुशायरों में प्रस्तुति देना पसंद है।
         </p>
     </section>
-
-    <!-- ग़ज़ल 1 -->
+<div id="ghazal-section" class="category-content">
+<!-- ग़ज़ल 1 -->
     <div class="card">
         <h2>गुमान</h2>
         <div class="poetry-container">
@@ -333,6 +333,35 @@
     <footer>
         <p>© 2026 अतुल राज ठाकरे | सभी अधिकार सुरक्षित</p>
     </footer>
+</footer>
+
+<!-- जावास्क्रिप्ट यहाँ आएगा -->
+<script>
+  function showCategory(categoryName) {
+    // 1. सभी सेक्शन्स छुपाएँ
+    const contents = document.querySelectorAll('.category-content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    // 2. सभी बटन्स से 'active' क्लास हटाएँ
+    const buttons = document.querySelectorAll('.nav-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // 3. चुना हुआ सेक्शन दिखाएँ
+    const selectedSection = document.getElementById(categoryName + '-section');
+    if (selectedSection) {
+      selectedSection.style.display = 'block';
+    }
+    
+    // क्लिक हुए बटन को एक्टिव बनाएँ
+    if (event && event.currentTarget) {
+      event.currentTarget.classList.add('active');
+    }
+  }
+</script>
 
 </body>
 </html>
